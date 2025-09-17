@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>금태랑 프로필</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- 구글 폰트 -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- AOS 애니메이션 -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <!-- Swiper 슬라이드 -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+
+  <!-- 1. 메인 프로필 -->
+  <section class="section hero">
+    <img src="img/profile.jpg" alt="금태랑" class="profile-img" />
+    <h1 data-aos="fade-up">금태랑 <span>Keum Tae Rang</span></h1>
+    <p data-aos="fade-up" data-aos-delay="200">📞 010-6826-0757</p>
+  </section>
+
+  <!-- 2. 취미 -->
+  <section class="section hobby" data-aos="fade-up">
+    <h2>🎵 취미 - 작곡</h2>
+    <img src="img/hobby.jpg" alt="작곡" />
+    <p>작곡을 좋아하신다고 합니다.  
+      신청하면 노래도 원하는 분위기로 만들어준다네요.</p>
+    <div class="btn-group">
+      <a href="https://soundcloud.com/" target="_blank" class="btn">작품 보러가기</a>
+      <a href="https://docs.google.com/forms/d/your-google-form-id" target="_blank" class="btn secondary">노래 제작 신청하기</a>
+    </div>
+  </section>
+
+  <!-- 3. 어록 -->
+  <section class="section quotes" data-aos="fade-up">
+    <h2>💬 어록</h2>
+    <div class="quote-list">
+      <p>"신난다~;;;;;"</p>
+      <p>"데엠"</p>
+      <p>"너가 여자였으면 참 좋았을 텐데"</p>
+    </div>
+  </section>
+
+  <!-- 4. 앨범 -->
+  <section class="section album" data-aos="fade-up">
+    <h2>📷 앨범</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper" id="album-wrapper">
+        <div class="swiper-slide"><img src="img/album1.jpg" /></div>
+        <div class="swiper-slide"><img src="img/album2.jpg" /></div>
+        <div class="swiper-slide"><img src="img/album3.jpg" /></div>
+      </div>
+    </div>
+    <button class="btn add-photo-btn" id="addPhotoBtn">사진 추가</button>
+  </section>
+
+  <!-- 5. 인스타그램 -->
+  <section class="section instagram" data-aos="fade-up">
+    <h2>📱 인스타그램</h2>
+    <div>
+      <a href="https://instagram.com/tayrang" target="_blank" class="btn">본계</a>
+      <a href="https://instagram.com/rangtaemu" target="_blank" class="btn">음악 계정</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 <a href="https://instagram.com/_doyuun23">tayranglover@dylu.store</a></p>
+  </footer>
+
+  <!-- Hidden file input -->
+  <input type="file" id="photoInput" accept=".jpg,.jpeg,.png" style="display:none">
+
+  <!-- Script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
