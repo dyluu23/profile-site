@@ -12,7 +12,7 @@ var swiper = new Swiper(".mySwiper", {
   loop: true,
   speed: 600, // 부드럽게 넘기기
   autoplay: {
-    delay: 3000,
+    delay: 1500,
     disableOnInteraction: false,
   }
 });
