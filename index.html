@@ -20,9 +20,9 @@
 
   <!-- 1. 메인 프로필 -->
   <section class="section hero">
-    <img src="profile.jpg" alt="금태랑" class="profile-img" />
+    <img src="profile.jpg" alt="금태랑" class="profile-img protected" />
     <h1 data-aos="fade-up">금태랑 <span>Keum Tae Rang</span></h1>
-    <p data-aos="fade-up" data-aos-delay="200">📞 010-6826-0757</p>
+    <p data-aos="fade-up" data-aos-delay="200" class="protected">📞 010-6826-0757</p>
   </section>
 
   <!-- 2. 취미 -->
@@ -72,7 +72,7 @@
   </section>
 
   <!-- 6. 앨범 -->
-  <section class="section album" data-aos="fade-up">
+  <section class="section album protected" data-aos="fade-up">
     <h2>📷 앨범</h2>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper" id="album-wrapper">
@@ -86,14 +86,21 @@
   </section>
 
   <!-- 7. 인스타그램 -->
-  <section class="section instagram" data-aos="fade-up">
+  <section class="section instagram protected" data-aos="fade-up">
     <h2>📱 인스타그램</h2>
     <div>
       <a href="https://instagram.com/tayrang" target="_blank" class="btn">본계</a>
       <a href="https://instagram.com/rangtaemu" target="_blank" class="btn">음악 계정</a>
     </div>
   </section>
-  
+
+  <!-- 비밀번호 입력 영역 -->
+<section class="section unlock-section">
+  <input type="password" id="unlockInput" placeholder="비밀번호 입력 (예: 1234)" />
+  <button id="unlockBtn" class="btn">확인</button>
+  <p id="unlockMsg" style="margin-top:8px; color:red;"></p>
+</section>
+
 
   <!-- Footer -->
   <footer class="footer">
