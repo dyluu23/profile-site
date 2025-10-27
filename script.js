@@ -53,19 +53,19 @@ photoInput.addEventListener("change", (event) => {
   };
 });
 <script>
-  document.getElementById("unlockBtn").addEventListener("click", function() {
-    const pw = document.getElementById("unlockInput").value.trim();
-    const msg = document.getElementById("unlockMsg");
+  document.addEventListener("DOMContentLoaded", () => {
+    // 처음엔 잠긴 상태
+    document.body.classList.add("locked");
 
-    if (pw === "1234") {
-      document.querySelectorAll(".protected").forEach(el => {
-        el.style.display = "";
-      });
-      msg.style.color = "green";
-      msg.textContent = "🔓 잠금이 해제되었습니다.";
-    } else {
-      msg.style.color = "red";
-      msg.textContent = "❌ 비밀번호가 틀렸습니다.";
-    }
+    const unlockInput = document.createElement("input");
+    unlockInput.placeholder = "아래에 1234를 입력하세요";
+    document.body.appendChild(unlockInput);
+
+    unlockInput.addEventListener("input", () => {
+      if (unlockInput.value === "1234") {
+        document.body.classList.remove("locked");
+      }
+    });
   });
 </script>
+
