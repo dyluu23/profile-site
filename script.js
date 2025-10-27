@@ -52,3 +52,20 @@ photoInput.addEventListener("change", (event) => {
     alert("사진이 앨범에 추가되었습니다!");
   };
 });
+<script>
+  document.getElementById("unlockBtn").addEventListener("click", function() {
+    const pw = document.getElementById("unlockInput").value.trim();
+    const msg = document.getElementById("unlockMsg");
+
+    if (pw === "1234") {
+      document.querySelectorAll(".protected").forEach(el => {
+        el.style.display = "";
+      });
+      msg.style.color = "green";
+      msg.textContent = "🔓 잠금이 해제되었습니다.";
+    } else {
+      msg.style.color = "red";
+      msg.textContent = "❌ 비밀번호가 틀렸습니다.";
+    }
+  });
+</script>
