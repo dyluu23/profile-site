@@ -142,6 +142,13 @@ h1 span {
 .fav-album p {
   margin: 5px 0;
 }
+/* 기본적으로 보이게 (자바스크립트가 숨김 처리함) */
 .protected {
+  display: block;
+}
+
+/* JS에서 body에 locked 클래스 추가 시 숨김 */
+body.locked .protected {
   display: none !important;
 }
+
